@@ -231,6 +231,13 @@ p {
 /* End Header section */
 
 /* Hero Section */
+#canvas1{
+	position: absolute;
+	top:0; left: 0;
+	width: 100%;
+	height: 100%;
+
+}
 #hero {
 	background-image: url(../assets/images/hero2.jpg);
 	background-size: 1000px 500px;
@@ -590,7 +597,7 @@ p {
 }
 @keyframes text_reveal_name {
 	100% {
-		color: crimson;
+		color: silver;
 		font-weight: 500;
 	}
 }

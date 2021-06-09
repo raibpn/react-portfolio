@@ -1,13 +1,16 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import '../Styles/Project.css'
+// import '../Styles/Project.css'
+import Particles from 'react-particles-js';
 
 
 function Content(props) {
 
-    return(
-           <section id="header">
-    <div className="header container">
+  return (
+    
+    <section id="header">
+      
+      <div className="header container">
       <div className="nav-bar">
         <div className="brand">
           <a href="">
@@ -24,11 +27,66 @@ function Content(props) {
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
-          </ul>
+            </ul>
+            
+          </div>
+          
         </div>
+        
       </div>
-    </div>
-  </section>
+       <Particles 
+            params={{
+              particles: {
+                number: {
+                  value: 400,
+                  density: {
+                    enable: true,
+                    value_area: 1000
+                  }
+                },
+                color: {
+                  value: '#fff'
+                },
+                opacity: {
+                  value: 0.3,
+                  anim: {
+                    enable: true
+                  }
+                },
+                size: {
+                  value: 5,
+                  random: true,
+                  anim: {
+                    enable: true,
+                    speed: 2
+                  }
+                },
+                line_linked: {
+                  enable: false
+                },
+                avoidMouse: {
+                  enable: false
+                },
+                move: {
+                  speed: 0.2
+                },
+                interactivity: {
+                  detect_on: 'window',
+                  events: {
+                    onhover: {
+                      enable: true,
+                      mode: "repulse"
+                    }
+                  },
+                }
+              }
+        }}
+        />
+       
+        
+      </section>
+    
+      
     );
 
 }
