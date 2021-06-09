@@ -34,53 +34,44 @@ function Content(props) {
         </div>
         
       </div>
-       <Particles 
-            params={{
-              particles: {
-                number: {
-                  value: 400,
-                  density: {
-                    enable: true,
-                    value_area: 1000
-                  }
-                },
-                color: {
-                  value: '#fff'
-                },
-                opacity: {
-                  value: 0.3,
-                  anim: {
-                    enable: true
-                  }
-                },
-                size: {
-                  value: 5,
-                  random: true,
-                  anim: {
-                    enable: true,
-                    speed: 2
-                  }
-                },
-                line_linked: {
-                  enable: false
-                },
-                avoidMouse: {
-                  enable: false
-                },
-                move: {
-                  speed: 0.2
-                },
-                interactivity: {
-                  detect_on: 'window',
-                  events: {
-                    onhover: {
-                      enable: true,
-                      mode: "repulse"
-                    }
-                  },
-                }
+      <Particles id="particle"
+        params={{
+       
+          particles: {
+            number: {
+              value: 120,
+              density: {
+                enable: false
               }
+            },
+            size: {
+              value: 5,
+              random: true
+            },
+            move: {
+              direction: "random",
+              outMode: "out"
+            },
+            links: {
+              enable: false
+            }
+          },
+          interactivity: {
+            etect_on: 'window',
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse"
+              }
+            },
+            modes: {
+              remove: {
+                quantity: 10
+              }
+            }
+          }
         }}
+        height="100vh"
         />
        
         
